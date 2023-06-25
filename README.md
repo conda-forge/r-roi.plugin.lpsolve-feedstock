@@ -1,11 +1,11 @@
-About r-roi.plugin.lpsolve
-==========================
+About r-roi.plugin.lpsolve-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-roi.plugin.lpsolve-feedstock/blob/main/LICENSE.txt)
 
 Home: http://roi.r-forge.r-project.org/, https://github.com/roigrp/ROI.plugin.lpsolve
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-roi.plugin.lpsolve-feedstock/blob/main/LICENSE.txt)
 
 Summary: Enhances the 'R' Optimization Infrastructure ('ROI') package with the 'lp_solve' solver.
 
