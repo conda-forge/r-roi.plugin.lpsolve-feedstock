@@ -1,4 +1,4 @@
-{% set version = '1.0-1' %}
+{% set version = "1.0-2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ROI.plugin.lpsolve_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ROI.plugin.lpsolve/ROI.plugin.lpsolve_{{ version }}.tar.gz
-  sha256: 4fcb0927c05601b4ee9d44031577fee3cc04af4523942492f924ad7cf064a9c0
+  sha256: b225677ed988bf349ae59f6c682f553c8c7b128f23b2bcb71f6ae982bf0bef75
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -44,7 +44,7 @@ about:
   summary: Enhances the 'R' Optimization Infrastructure ('ROI') package with the 'lp_solve' solver.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
